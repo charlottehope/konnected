@@ -1,6 +1,7 @@
 {
   "name": "project-exam",
   "version": "0.1.0",
+  "homepage": "http://charlotttehope.github.io/konnected",
   "private": true,
   "dependencies": {
     "@emoji-mart/data": "^1.1.2",
@@ -28,6 +29,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "compile-sass": "node-sass src/scss/main.scss -o src/css",
     "watch-sass": "npm run compile-sass -- --watch"
   },
@@ -55,6 +58,7 @@
   "proxy": "https://api.noroff.dev/api/v1",
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^6.0.0",
     "node-sass": "^9.0.0",
     "sass-loader": "^13.3.2",
     "source-map-loader": "^4.0.1",

@@ -1,6 +1,4 @@
-# Konnected
-
-This project was build with React
+# Project Exam 2 - Konnected
 
 ## Getting started
 

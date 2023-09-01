@@ -31,9 +31,12 @@ const MyProfilePage = ({ onLogout }) => {
 
   const fetchPosts = async (name) => {
     const token = sessionStorage.getItem("accessToken");
-    const response = await fetch(`/social/profiles/${name}/posts`, {
-      headers: { Authorization: `Bearer ${token}` },
-    });
+    const response = await fetch(
+      `https://api.noroff.dev/api/v1/social/profiles/${name}/posts`,
+      {
+        headers: { Authorization: `Bearer ${token}` },
+      }
+    );
     const data = await response.json();
     setPosts(Array.isArray(data) ? data : []);
   };
@@ -48,17 +51,20 @@ const MyProfilePage = ({ onLogout }) => {
     e.preventDefault();
     const token = sessionStorage.getItem("accessToken");
     try {
-      const response = await fetch(`/social/profiles/${profile.name}/media`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-        body: JSON.stringify({
-          avatar: profile.avatar,
-          banner: profile.banner,
-        }),
-      });
+      const response = await fetch(
+        `https://api.noroff.dev/api/v1/social/profiles/${profile.name}/media`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({
+            avatar: profile.avatar,
+            banner: profile.banner,
+          }),
+        }
+      );
       const responseData = await response.json();
 
       if (response.status === 200) {

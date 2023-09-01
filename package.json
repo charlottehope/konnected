@@ -1,6 +1,5 @@
 {
   "name": "project-exam",
-  "homepage": "https://charlottehope.github.io/konnected/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

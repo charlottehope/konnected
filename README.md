@@ -25,10 +25,10 @@ npm start
 4. Open the application in your browser (default port 3000):
    [http://localhost:3000](http://localhost:3000)
 
-   ### Log in with test user:
+### Log in with test user:
 
-   Username: charlotte.hope@stud.noroff.no
-   Password: charlotte123
+Username: charlotte.hope@stud.noroff.no
+Password: charlotte123
 
 ## This project was built with
 

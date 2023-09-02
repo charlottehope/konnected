@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.5ccb73b8.css",
-    "main.js": "/static/js/main.738af237.js",
+    "main.js": "/static/js/main.121312d2.js",
     "static/media/logo-eastern-blue.png": "/static/media/logo-eastern-blue.a0e254f671b56311024a.png",
     "static/media/logo-azure.png": "/static/media/logo-azure.76c3804b2e2e8e00c662.png",
     "index.html": "/index.html",
     "main.5ccb73b8.css.map": "/static/css/main.5ccb73b8.css.map",
-    "main.738af237.js.map": "/static/js/main.738af237.js.map"
+    "main.121312d2.js.map": "/static/js/main.121312d2.js.map"
   },
   "entrypoints": [
     "static/css/main.5ccb73b8.css",
-    "static/js/main.738af237.js"
+    "static/js/main.121312d2.js"
   ]
 }

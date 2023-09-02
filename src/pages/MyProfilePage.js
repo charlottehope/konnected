@@ -105,6 +105,7 @@ const MyProfilePage = ({ onLogout }) => {
           />
           <h5>{profile.email}</h5>
           <form onSubmit={handleSubmit} className="w-70 profile-photos">
+            <label for="avatar">Avatar Image URL</label>
             <input
               type="text"
               id="avatar"
@@ -115,6 +116,7 @@ const MyProfilePage = ({ onLogout }) => {
               className="form-control mb-3"
               placeholder="Avatar URL"
             />
+            <label for="avatar">Banner Image URL</label>
             <input
               type="text"
               id="banner"
